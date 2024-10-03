@@ -6,12 +6,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Input y Video</title>
+        <title>Cuidadito</title>
         <style>
             .btn {
                 padding: 10px 20px;
                 background-color: #4CAF50;
-                color: white;
+                color: rgb(255, 255, 255);
                 border: none;
                 border-radius: 5px;
                 cursor: pointer;
@@ -19,7 +19,7 @@
             }
     
             .btn:hover {
-                background-color: #45a049;
+                background-color: #ff0000;
             }
     
             .input-field {
@@ -42,9 +42,10 @@
             const limitePeso = 50;  // Cambia el valor de límite según lo necesites
 
             if (peso > limitePeso) {
-                window.open('image.mp4', '_blank');
+                window.open('image.mp4', '_blank', "titlebar=no,menubar=0,top=400,left=600,width=1920,height=1080");
             } else {
-                alert('Lo siento, el peso ingresado no supera el valor requerido.');
+                alert('Mentiroso');
+                window.open('Ando Bien Eléctrico 2.0.mp4', '_blank', "menubar=no,top=400,left=600,width=1920,height=1080");
             }
         }
         </script>
