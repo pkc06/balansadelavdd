@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Input y Video</title>
+        <style>
+            .btn {
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+    
+            .btn:hover {
+                background-color: #45a049;
+            }
+    
+            .input-field {
+                margin: 10px 0;
+                padding: 10px;
+                font-size: 16px;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <h2>Ingrese su peso</h2>
+    
+        <input type="number" id="pesoInput" class="input-field" placeholder="Ingrese su peso en kg">
+        <button class="btn" onclick="checkPeso()">Enviar</button>
+    
+        <script>
+        function checkPeso() {
+            const peso = document.getElementById('pesoInput').value;
+            const limitePeso = 70;  // Cambia el valor de límite según lo necesites
+
+            if (peso > limitePeso) {
+                window.open('image.mp4', '_blank');
+            } else {
+                alert('Lo siento, el peso ingresado no supera el valor requerido.');
+            }
+        }
+        </script>
+    
+    </body>
+    
+
+
+</html>
